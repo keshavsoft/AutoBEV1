@@ -1,0 +1,4 @@
+POST http://localhost:9011/V12/BillsTable/Read/SelColumns
+Content-Type: application/json
+
+[ "BuyerName", "BuyerMobile"]
