@@ -10,7 +10,7 @@ const StartFunc = ({ inHeadArray, inRowPk }) => {
 
     var $table = $(`#${CommonTableName}`);
 
-    $table.bootstrapTable("load", jVarLocalNewHeadArray);
+    $table.bootstrapTable("load", jFLocalAddGst({ inDataAsArray: jVarLocalNewHeadArray }));
 };
 
 const jFLocalForMap = element => {
@@ -46,6 +46,20 @@ const jFLocalClubArrays = ({ inHeadArray, inItemsArray }) => {
     const jVarLocalNewHeadArray = inHeadArray.map(jFLocalForMap);
 
     return jVarLocalNewHeadArray;
+};
+
+const jFLocalAddGst = ({ inDataAsArray }) => {
+    const jVarLocalArrayWithGstColumns = inDataAsArray.map(element => {
+        const jVarLocalTaxableValue = element.Amount * 100 / 118;
+
+        return {
+            ...element,
+            Cgst: ((element.Amount - jVarLocalTaxableValue) / 2).toFixed(2),
+            Sgst: ((element.Amount - jVarLocalTaxableValue) / 2).toFixed(2),
+        };
+    });
+
+    return jVarLocalArrayWithGstColumns;
 };
 
 export { StartFunc };

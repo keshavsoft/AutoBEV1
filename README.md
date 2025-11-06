@@ -69,4 +69,9 @@ Ensure Node.js version is v22.22 or above
 ### 1.0.6
 
 - SV11 BillFolderName perfect
+
+### 1.0.7
+
+- SV11 report Gst split perfect
+
 ---

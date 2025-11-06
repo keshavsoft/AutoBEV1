@@ -3,7 +3,7 @@ import { StartFunc as StartFuncFromFetchAsGet } from "./FetchAsGet/entryFile.js"
 let StartFunc = ({ inResponse }) => {
    StartFuncFromFetchAsGet();
    // debugger
-   console.log("aaaaaaaaaa : ", inResponse.BuyerGST);
+   // console.log("aaaaaaaaaa : ", inResponse.BuyerGST);
    jFLocalToInputBillNumberId(inResponse.pk);
    jFLocalToInputInvoiceDateId(inResponse.InvoiceDate);
    jFLocalToInputBuyerNameId(inResponse.BuyerName);
