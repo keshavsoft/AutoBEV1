@@ -58,4 +58,8 @@ Ensure Node.js version is v22.22 or above
 
 - SV11 started in UI
 
+### 1.0.4
+
+- SV11 redirect perfect
+
 ---
