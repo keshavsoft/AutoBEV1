@@ -1,6 +1,6 @@
 {
-    "StartUrl": "/SV3",
-    "TableName": "/SV3/BillsTable",
+    "StartUrl": "/SV4",
+    "TableName": "/SV4/BillsTable",
     "showFooter": true,
     "toolbar": "#toolbar",
     "searchable": true,

@@ -54,4 +54,8 @@ Ensure Node.js version is v22.22 or above
 
 - new secured just now started
 
+### 1.0.3
+
+- SV11 started in UI
+
 ---
