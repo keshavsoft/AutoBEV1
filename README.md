@@ -66,4 +66,7 @@ Ensure Node.js version is v22.22 or above
 
 - 9013 port added
 
+### 1.0.6
+
+- SV11 BillFolderName perfect
 ---
