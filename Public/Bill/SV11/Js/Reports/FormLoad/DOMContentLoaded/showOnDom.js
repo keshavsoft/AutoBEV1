@@ -1,7 +1,7 @@
 let StartFunc = () => {
 
-    jFFromInput({ inPutId: "HtmlId-FromDate", inValue: jFLocalGetDate() });
-    jFFromInput({ inPutId: "HtmlId-ToDate", inValue: jFLocalGetDate(1) });
+    jFFromInput({ inPutId: "HtmlId-FromDate", inValue: jFLocalGetDate(1) });
+    jFFromInput({ inPutId: "HtmlId-ToDate", inValue: jFLocalGetDate() });
 
     let jVarLocalRefreshBSTableId = document.querySelector(`.RefreshBSTableClass`);
     jVarLocalRefreshBSTableId.click();

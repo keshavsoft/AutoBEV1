@@ -257,7 +257,7 @@
         </div>
 
         <table id="table" class="table table-bordered table-striped" data-show-footer="true"
-            data-toolbar="#toolbarForToday" data-search="true" data-show-footer="true">
+            data-toolbar="#toolbarForToday" data-search="true" data-show-footer="true" data-show-export="true">
             <thead>
                 <tr>
                     <th data-field="KS-Serial" data-formatter="window.GlobalSerialFormatter">#</th>
@@ -286,6 +286,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.24.1/dist/bootstrap-table.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.25.0/dist/extensions/export/bootstrap-table-export.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tableexport.jquery.plugin@1.29.0/tableExport.min.js"></script>
 
     <script>
         window.GlobalSerialFormatter = (value, row, index) => {
